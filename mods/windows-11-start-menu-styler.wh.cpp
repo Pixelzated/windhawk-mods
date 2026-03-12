@@ -351,8 +351,6 @@ const Theme g_themeTranslucentStartMenu = {{
         L"Background:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#15000000\"/>",
         L"BorderThickness=0",
         L"CornerRadius=10"}},
-    // Pinned apps hover: fixed path — Grid child has no name, target border is Border#HighContrastBorder
-    // (old, broken) Grid#DroppedFlickerWorkaroundWrapper > Border never matched; styles never applied
     ThemeTargetStyles{L"//Border#ContentBorder@CommonStates > Grid#DroppedFlickerWorkaroundWrapper > Border", {
         L"Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.2\"/>",
         L"Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\"/>",
@@ -373,9 +371,6 @@ const Theme g_themeTranslucentStartMenu = {{
     ThemeTargetStyles{L"StartMenu.SearchBoxToggleButton > Grid > Border#BorderElement", {
         L"BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
         L"BorderThickness=1"}},
-    // User tile hover: fixed path — @CommonStates must be on the button, not its inner Grid;
-    // target border is Border#BackgroundBorder, not an anonymous Border
-    // (old, broken) > Grid@CommonStates > Border never matched; styles never applied
     ThemeTargetStyles{L"//StartDocked.NavigationPaneButton#UserTileButton > Grid@CommonStates > Border", {
         L"Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.2\"/>",
         L"Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
@@ -386,9 +381,6 @@ const Theme g_themeTranslucentStartMenu = {{
         L"Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
         L"BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
         L"BorderThickness=1"}},
-    // Nav buttons (settings, folders, etc.) hover: fixed path — parent class is ListViewItem,
-    // Grid is Grid#ContentBorder, target border is Border#BackgroundBorder
-    // (old, broken) StartDocked.AppListViewItem > Grid@CommonStates > Border never matched; styles never applied
     ThemeTargetStyles{L"//StartDocked.AppListViewItem > Grid@CommonStates > Border", {
         L"Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.45\"/>",
         L"BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.7\"/>",
@@ -399,9 +391,6 @@ const Theme g_themeTranslucentStartMenu = {{
         L"BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.7\"/>",
         L"BorderThickness=1",
         L"Margin@Normal=4"}},
-    // Power button hover: fixed path — @CommonStates must be on the button, not its inner Grid;
-    // target border is Border#BackgroundBorder, not an anonymous Border
-    // (old, broken) > Grid@CommonStates > Border never matched; styles never applied
     ThemeTargetStyles{L"//StartDocked.NavigationPaneButton#PowerButton > Grid@CommonStates > Border", {
         L"Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.45\"/>",
         L"BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.7\"/>",
@@ -490,8 +479,6 @@ const Theme g_themeTranslucentStartMenu_variant_ClassicStartMenu = {{
         L"Background:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#15000000\"/>",
         L"BorderThickness=0",
         L"CornerRadius=10"}},
-    // Pinned apps hover: fixed path — Grid child has no name, target border is Border#HighContrastBorder
-    // (old, broken) Grid#DroppedFlickerWorkaroundWrapper > Border never matched; styles never applied
     ThemeTargetStyles{L"//Border#ContentBorder@CommonStates > Grid#DroppedFlickerWorkaroundWrapper > Border", {
         L"Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"0\" Opacity=\"0.2\"/>",
         L"Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\"/>",
@@ -514,9 +501,6 @@ const Theme g_themeTranslucentStartMenu_variant_ClassicStartMenu = {{
     ThemeTargetStyles{L"StartDocked.SearchBoxToggleButton#StartMenuSearchBox > Grid > Border#BorderElement", {
         L"BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
         L"BorderThickness=1"}},
-    // User tile hover: fixed path — @CommonStates must be on the button, not its inner Grid;
-    // target border is Border#BackgroundBorder, not an anonymous Border
-    // (old, broken) > Grid@CommonStates > Border never matched; styles never applied
     ThemeTargetStyles{L"//StartDocked.NavigationPaneButton#UserTileButton > Grid@CommonStates > Border", {
         L"Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"0\" Opacity=\"0.2\"/>",
         L"Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
@@ -527,9 +511,6 @@ const Theme g_themeTranslucentStartMenu_variant_ClassicStartMenu = {{
         L"Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
         L"BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
         L"BorderThickness=1"}},
-    // Nav buttons (settings, folders, etc.) hover: fixed path — parent class is ListViewItem,
-    // Grid is Grid#ContentBorder, target border is Border#BackgroundBorder
-    // (old, broken) StartDocked.AppListViewItem > Grid@CommonStates > Border never matched; styles never applied
     ThemeTargetStyles{L"//StartDocked.AppListViewItem > Grid@CommonStates > Border", {
         L"Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.45\"/>",
         L"BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.7\"/>",
@@ -540,9 +521,6 @@ const Theme g_themeTranslucentStartMenu_variant_ClassicStartMenu = {{
         L"BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.7\"/>",
         L"BorderThickness=1",
         L"Margin@Normal=4"}},
-    // Power button hover: fixed path — @CommonStates must be on the button, not its inner Grid;
-    // target border is Border#BackgroundBorder, not an anonymous Border
-    // (old, broken) > Grid@CommonStates > Border never matched; styles never applied
     ThemeTargetStyles{L"//StartDocked.NavigationPaneButton#PowerButton > Grid@CommonStates > Border", {
         L"Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.45\"/>",
         L"BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.7\"/>",
